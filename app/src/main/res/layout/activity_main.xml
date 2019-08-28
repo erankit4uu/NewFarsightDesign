@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:padding="8dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:tint="@color/colorAccent"
+                        android:src="@drawable/ic_user_color" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Employee"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="8dp"
+                        android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".7"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:text="Let's Start with "
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_25sdp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:text="App Connection !!"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Please Signup to use our app"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/rectangle_rounded_corner"
+                        android:gravity="center">
+
+                    <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_global"
+                            android:tint="@color/colorPrimary" />
+
+                    <LinearLayout
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginRight="@dimen/_18sdp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:background="@color/colorPrimaryDark">
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:focusableInTouchMode="true"
+                            android:gravity="left|center"
+                            android:hint="URL"
+                            android:id="@+id/tv_url"
+                            android:textSize="8dp"
+                            android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rectangle_rounded_corner"
+                        android:gravity="center">
+
+                    <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_lock_color"
+                            android:tint="@color/colorPrimary" />
+
+                    <LinearLayout
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginRight="@dimen/_18sdp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:background="@color/colorPrimaryDark">
+
+                    </LinearLayout>
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:id="@+id/password"
+                            android:focusableInTouchMode="true"
+                            android:gravity="left|center"
+                            android:hint="company key"
+                            android:textSize="8dp" />
+                </LinearLayout>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:visibility="gone"
+                        android:text="Forgot Password?"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+            <Button
+                    android:id="@+id/btnConnect"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="CONNECT"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:background="@drawable/rectangle_rounded_corner"
+                    android:textAllCaps="true" />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="LOG IN"
+                    android:visibility="invisible"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="8dp"
+                    android:textStyle="normal" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
